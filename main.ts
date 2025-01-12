@@ -68,5 +68,27 @@ basic.forever(function () {
         radio.sendNumber(6)
         basic.pause(100)
         basic.clearScreen()
+    } else if (joystickbit.getButton(joystickbit.JoystickBitPin.P12)) {
+        basic.showLeds(`
+            . . # # #
+            . # . . .
+            . # . . .
+            . # . . .
+            . . # # #
+            `)
+        radio.sendNumber(7)
+        basic.pause(100)
+        basic.clearScreen()
+    } else if (joystickbit.getButton(joystickbit.JoystickBitPin.P13)) {
+        basic.showLeds(`
+            . # # # .
+            . # . . #
+            . # . . #
+            . # . . #
+            . # # # .
+            `)
+        radio.sendNumber(8)
+        basic.pause(100)
+        basic.clearScreen()
     }
 })
